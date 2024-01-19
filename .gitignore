@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+
+# Express.js
+*.log
+
+# Angular
+/dist/
+/e2e/
+/node_modules/
+/src/assets/.DS_Store
+/src/assets/*.log
+
+# MongoDB
+/data/
