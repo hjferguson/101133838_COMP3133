@@ -1,0 +1,19 @@
+-Socket.io is library for server-client communication
+-just the server needs to run the socket. 
+-real time application (RTA) is an application that functions within a period that user senses an immediate or current response. 
+-found in instant messaging, push notifications, collaboration applications, online gaming. 
+-socket is for constant read/response with client and server. If you don't need the constant communication, just use API
+-for example, live chat pop up would use socket, signing into your account would be API
+-sockets work based on events
+-There are some reserved events, which can be accessed using the socket object on the server side. These are: connect, message, disconnect, reconnect, ping, join, leave.
+-the client-side socket object also provides events: connect, connect_error, connect_timeout, reconnect, etc. 
+-socket.io allows for namespace. means you can assign different endpoints for paths. allows you to split the logic of your application resulting in fewer TCP connections reducing the amount of resources required. 
+-socket.io also has 'rooms' within each channel where sockets can join and leave
+-log in with permissions. depending on your user permissions, you'll be assigned to a certain channel. 
+-you can send the same event to multiple rooms
+-selenium for client side testing
+-types of automation framework: linear scripting, test library architecture framework, the data driven testing framework, keyword-driven test framework, hybrid test automation framework
+-mocha is used for node.js and browser testing
+-BDD behaviour driven development
+-mocha tests run serially allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases
+-
