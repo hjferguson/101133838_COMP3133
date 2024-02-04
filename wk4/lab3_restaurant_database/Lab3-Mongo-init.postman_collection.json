@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "68f69209-e513-4e97-b005-bc8713afd63f",
+		"name": "Lab3-Mongo-init",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29779587"
+	},
+	"item": [
+		{
+			"name": "get all restaurants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/restaurants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by Cuisine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/restaurants/cuisine/Japanese",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants",
+						"cuisine",
+						"Japanese"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by ASC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/restaurants?sortBy=ASC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "ASC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by DESC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/restaurants?sortBy=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get delicatessen not in brooklyn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/restaurants/Delicatessen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants",
+						"Delicatessen"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
