@@ -5,11 +5,13 @@ node_modules/
 *.log
 
 # Angular
-/dist/
-/e2e/
-/node_modules/
-/src/assets/.DS_Store
-/src/assets/*.log
+dist/
+e2e/
+node_modules/
+src/assets/.DS_Store
+src/assets/*.log
 
 # MongoDB
-/data/
+data/
+
+Live-Chat-Webapp/

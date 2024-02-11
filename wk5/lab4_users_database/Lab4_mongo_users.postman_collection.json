@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "e4d297c0-2b16-4749-99ff-3741c58b0707",
+		"name": "Lab4_mongo_users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29779587"
+	},
+	"item": [
+		{
+			"name": "good request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jane Doe\",\r\n  \"username\": \"JaneDoe4\",\r\n  \"email\": \"jane.doe@example.com\",\r\n  \"address\": {\r\n    \"street\": \"123 Main St\",\r\n    \"suite\": \"Apt. 1\",\r\n    \"city\": \"Anytown\",\r\n    \"zipcode\": \"12345-6789\",\r\n    \"geo\": {\r\n      \"lat\": \"-37.3159\",\r\n      \"lng\": \"81.1496\"\r\n    }\r\n  },\r\n  \"phone\": \"1-234-567-8901\",\r\n  \"website\": \"https://www.example.com\",\r\n  \"company\": {\r\n    \"name\": \"Doe Inc.\",\r\n    \"catchPhrase\": \"Empowering seamless solutions\",\r\n    \"bs\": \"innovate scalable technologies\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bad request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jane Doe\",\r\n  \"username\": \"JaneDoe4\",\r\n  \"email\": \"jane.do@ample.com\",\r\n  \"address\": {\r\n    \"street\": \"123 Main St\",\r\n    \"suite\": \"Apt. 1\",\r\n    \"city\": \"Anytown\",\r\n    \"zipcode\": \"12345-6789\",\r\n    \"geo\": {\r\n      \"lat\": \"-37.3159\",\r\n      \"lng\": \"81.1496\"\r\n    }\r\n  },\r\n  \"phone\": \"1-2d34-w567-83901\",\r\n  \"website\": \"https://www.example.com\",\r\n  \"company\": {\r\n    \"name\": \"Doe Inc.\",\r\n    \"catchPhrase\": \"Empowering seamless solutions\",\r\n    \"bs\": \"innovate scalable technologies\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

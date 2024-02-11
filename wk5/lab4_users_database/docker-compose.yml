@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    container_name: users_backend
+    restart: always
+    build: ./backend
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/users
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db  # Persist MongoDB data
+      
